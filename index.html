@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Bistro & Cafe - Fresh Brews & Artisanal Bites</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#home" class="brand-logo"><i class="fa-solid fa-mug-hot"></i> Aroma<span>Bistro</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reserve">Table Reservation</a></li>
+                    <li><a href="#contact">Hours & Location</a></li>
+                </ul>
+            </nav>
+            <a href="#reserve" class="nav-btn">Book a Table</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-content">
+            <span class="sub-badge">Locally Sourced & Artisanal</span>
+            <h1>Craft Coffee & Wholesome Dining</h1>
+            <p>Experience hand-poured single-origin brews, fresh-out-of-the-oven sourdough pastries, and chef-curated brunch in a cozy, welcoming atmosphere.</p>
+            <div class="hero-actions">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#reserve" class="btn btn-secondary">Reserve a Table</a>
+            </div>
+            <div class="hero-highlights">
+                <div><i class="fa-solid fa-seedling"></i> 100% Organic Beans</div>
+                <div><i class="fa-solid fa-bread-slice"></i> Daily Baked Sourdough</div>
+                <div><i class="fa-solid fa-star"></i> 4.9 Rated Locally</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container about-grid">
+            <div class="about-text">
+                <span class="section-tag">About Our Cafe</span>
+                <h2>Dedicated to the Art of Good Food & Meaningful Moments</h2>
+                <p>Founded as a neighborhood sanctuary, Aroma Bistro brings people together over freshly roasted coffees and chef-crafted comforting meals. We partner directly with regional growers and bake every pastry from scratch every morning.</p>
+                <ul class="about-features">
+                    <li><i class="fa-solid fa-check"></i> Specialty roasted Arabica and Robusta blends</li>
+                    <li><i class="fa-solid fa-check"></i> Vegan and gluten-free dining options available</li>
+                    <li><i class="fa-solid fa-check"></i> High-speed WiFi and cozy work-friendly zones</li>
+                </ul>
+            </div>
+            <div class="about-stats-card">
+                <div class="stat-item">
+                    <h3>12k+</h3>
+                    <p>Cups Served Monthly</p>
+                </div>
+                <div class="stat-item">
+                    <h3>25+</h3>
+                    <p>Artisanal Pastries & Meals</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5 yrs</h3>
+                    <p>Serving the Community</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section menu-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Chef's Selections</span>
+                <h2>Our Handcrafted Menu</h2>
+                <p>Made with fresh seasonal ingredients and utmost passion.</p>
+            </div>
+
+            <!-- Menu Category Filter Tabs -->
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="all">All Items</button>
+                <button class="tab-btn" data-category="beverages">Coffee & Tea</button>
+                <button class="tab-btn" data-category="bakery">Bakery & Bites</button>
+                <button class="tab-btn" data-category="mains">Brunch & Mains</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menu-grid">
+                <!-- Item 1 -->
+                <div class="menu-card" data-category="beverages">
+                    <div class="menu-card-header">
+                        <h4>Signature Caramel Macchiato</h4>
+                        <span class="price">₹220</span>
+                    </div>
+                    <p>Fresh espresso shots layered with steamed vanilla milk and drizzled with buttery artisanal caramel sauce.</p>
+                </div>
+                <!-- Item 2 -->
+                <div class="menu-card" data-category="beverages">
+                    <div class="menu-card-header">
+                        <h4>Cold Brew Reserve</h4>
+                        <span class="price">₹240</span>
+                    </div>
+                    <p>18-hour slow steeped single-origin Arabica beans served over crystal ice with subtle citrus notes.</p>
+                </div>
+                <!-- Item 3 -->
+                <div class="menu-card" data-category="bakery">
+                    <div class="menu-card-header">
+                        <h4>Almond Butter Croissant</h4>
+                        <span class="price">₹180</span>
+                    </div>
+                    <p>Double-baked flaky French butter pastry filled with rich almond frangipane cream and toasted sliced nuts.</p>
+                </div>
+                <!-- Item 4 -->
+                <div class="menu-card" data-category="bakery">
+                    <div class="menu-card-header">
+                        <h4>Wild Berry Sourdough Danish</h4>
+                        <span class="price">₹195</span>
+                    </div>
+                    <p>Organic sourdough puff pastry centered with Madagascar vanilla bean custard and fresh seasonal berry compote.</p>
+                </div>
+                <!-- Item 5 -->
+                <div class="menu-card" data-category="mains">
+                    <div class="menu-card-header">
+                        <h4>Smashed Avocado Toast</h4>
+                        <span class="price">₹280</span>
+                    </div>
+                    <p>Toasted country sourdough topped with hass avocado, cherry tomatoes, Danish feta, chili flakes, and microgreens.</p>
+                </div>
+                <!-- Item 6 -->
+                <div class="menu-card" data-category="mains">
+                    <div class="menu-card-header">
+                        <h4>Truffle Herb Grilled Panini</h4>
+                        <span class="price">₹320</span>
+                    </div>
+                    <p>Sautéed mushrooms, melted bocconcini mozzarella, baby spinach, and white truffle oil pressed in ciabatta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reserve" class="section reserve-section">
+        <div class="container">
+            <div class="reserve-box">
+                <div class="reserve-info">
+                    <span class="section-tag">Plan Your Visit</span>
+                    <h2>Book A Table In Advance</h2>
+                    <p>Avoid weekend waitlists! Reserve your table in seconds. For parties greater than 8 people or private celebrations, please call us directly.</p>
+                    <div class="contact-pill"><i class="fa-solid fa-phone"></i> +91 98765 43210</div>
+                    <div class="contact-pill"><i class="fa-solid fa-envelope"></i> reservations@aromabistro.in</div>
+                </div>
+
+                <form id="reservation-form" class="reserve-form">
+                    <h3>Reserve Online</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-name">Full Name *</label>
+                            <input type="text" id="res-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-phone">Phone Number *</label>
+                            <input type="tel" id="res-phone" placeholder="Phone Number" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-date">Date *</label>
+                            <input type="date" id="res-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-time">Time Slot *</label>
+                            <select id="res-time" required>
+                                <option value="">Select Time</option>
+                                <option value="09:00 AM">09:00 AM (Breakfast)</option>
+                                <option value="11:30 AM">11:30 AM (Brunch)</option>
+                                <option value="01:30 PM">01:30 PM (Lunch)</option>
+                                <option value="05:00 PM">05:00 PM (High Tea)</option>
+                                <option value="07:30 PM">07:30 PM (Dinner)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="res-guests">Number of Guests</label>
+                        <select id="res-guests">
+                            <option value="1">1 Person</option>
+                            <option value="2" selected>2 People</option>
+                            <option value="3-4">3 - 4 People</option>
+                            <option value="5-8">5 - 8 People</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Confirm Reservation</button>
+                    <div id="res-status" class="res-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours & Location Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container contact-grid">
+            <div class="info-card">
+                <i class="fa-regular fa-clock icon"></i>
+                <h3>Opening Hours</h3>
+                <p><strong>Monday - Friday:</strong> 8:00 AM – 10:00 PM</p>
+                <p><strong>Saturday - Sunday:</strong> 8:00 AM – 11:00 PM</p>
+                <p style="margin-top:0.5rem; color:#10b981; font-weight:600;"><i class="fa-solid fa-circle fa-2xs"></i> Open Daily for Dine-In & Takeaway</p>
+            </div>
+            <div class="info-card">
+                <i class="fa-solid fa-location-dot icon"></i>
+                <h3>Our Location</h3>
+                <p>Plot No. 42, Main Heritage Boulevard</p>
+                <p>Opposite Central City Park, Paritala, AP - 521180</p>
+                <p style="margin-top:0.5rem;"><a href="#map" class="map-link"><i class="fa-solid fa-diamond-turn-right"></i> Get Directions</a></p>
+            </div>
+            <div class="info-card">
+                <i class="fa-solid fa-comments icon"></i>
+                <h3>Direct Inquiries</h3>
+                <p><strong>Manager:</strong> contact@aromabistro.in</p>
+                <p><strong>Events:</strong> events@aromabistro.in</p>
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Aroma Bistro & Cafe. All rights reserved.</p>
+            <p>Developed by <strong>Vadlamudi Sivachakradhar</strong> for Future Interns Task 3 (Repository: <a href="https://github.com/sivachakradharvadlamudi/FUTURE_FS_03" target="_blank">FUTURE_FS_03</a>).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
